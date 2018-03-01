@@ -1,0 +1,42 @@
+{
+    "name": "httpoz/locked",
+    "description": "Laravel package to lock an app after x - date.",
+    "keywords": [
+        "laravel", "httpoz"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oscar Mwanandimai"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0.0",
+        "illuminate/support": "~5.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "~3.5.0",
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "HttpOz\\Locked\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HttpOz\\Locked\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "HttpOz\\Locked\\LockServiceProvider"
+            ]
+        }
+    }
+}
