@@ -1,6 +1,6 @@
 <?php
 
-namespace HttpOz\Locked\Http\Middleware;
+namespace HttpOz\Locked\Middleware;
 
 use Closure;
 use HttpOz\Locked\Exceptions\ApplicationLockedException;
