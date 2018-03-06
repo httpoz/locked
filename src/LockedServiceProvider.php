@@ -19,12 +19,7 @@ class LockedServiceProvider extends ServiceProvider
             ],
             'config'
         );
-        $this->publishes(
-            [
-                __DIR__.'/../resources/views' => base_path('resources/views/vendor')
-            ],
-            'views'
-        );
+	    $this->loadViewsFrom(__DIR__.'/../resources/views', 'courier');
     }
 
     /**
