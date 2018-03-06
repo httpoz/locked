@@ -13,7 +13,7 @@ class ApplicationLockedException extends Exception {
 	 * @return \Illuminate\Http\Response
 	 */
 	public function render($request) {
-		return response()->view('httpoz::locked.error');
+		return response()->view('httpoz::locked');
 	}
 
 }
