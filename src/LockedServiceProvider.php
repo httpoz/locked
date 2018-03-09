@@ -19,7 +19,7 @@ class LockedServiceProvider extends ServiceProvider
             ],
             'config'
         );
-	    $this->loadViewsFrom(__DIR__.'/../resources/views', 'courier');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'httpoz');
     }
 
     /**

@@ -14,7 +14,7 @@ composer require httpoz/locked
 To publish the package config's file to your application. Run this command inside your terminal.
 
 ```
-php artisan vendor:publish --provider="HttpOz\Roles\RolesServiceProvider"
+php artisan vendor:publish --provider="HttpOz\Locked\LockedServiceProvider"
 ```
 
 # Middleware
