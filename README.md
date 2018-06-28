@@ -46,7 +46,7 @@ If all the conditions in your rules are `true`, the application is locked.
 
 # Middleware
 
-This package comes with IsLocked middleware. You must add them inside your app/Http/Kernel.php file.
+This package comes with the `IsLocked` middleware. You must add it to your app/Http/Kernel.php file.
 
 ```php
 <?php
