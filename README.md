@@ -42,7 +42,7 @@ class InActivePeriod extends Rule
 }
 ```
 
-If all the conditions in your rules are `true`, the application is locked.
+The application will be locked on the first `false` returned from your rules.
 
 # Middleware
 
