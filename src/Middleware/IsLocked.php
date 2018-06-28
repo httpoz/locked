@@ -16,9 +16,13 @@ class IsLocked {
 	 */
 	public function handle( $request, Closure $next ) {
 		if ( config( 'locked.enabled' ) ) {
-			$inWindow = strtotime( 'today' ) >= strtotime( config( 'locked.between.start' ) ) && strtotime( 'today' ) <= strtotime( config( 'locked.between.end' ) );
-			if ($inWindow) {
-				throw new ApplicationLockedException($request);
+			$rules = config('locked.rules');
+			if(!empty($rules)) {
+				foreach ($rules as $rule) {
+					if(! (new $rule)->passes()) {
+						throw new ApplicationLockedException($request);
+					}
+				}
 			}
 		}
 
