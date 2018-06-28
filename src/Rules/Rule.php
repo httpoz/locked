@@ -2,7 +2,9 @@
 
 namespace HttpOz\Locked\Rules;
 
-abstract class Rule 
+use Illuminate\Http\Request;
+
+abstract class Rule
 {
-    abstract public function passes() : bool;
+    abstract public function passes(Request $request) : bool;
 }
