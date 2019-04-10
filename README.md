@@ -5,6 +5,7 @@ Laravel package to lock an app after x - date.
 [![Build Status](https://travis-ci.org/httpoz/locked.svg)](https://travis-ci.org/httpoz/locked)
 [![Total Downloads](https://poser.pugx.org/httpoz/locked/d/total.svg)](https://packagist.org/packages/httpoz/locked)
 [![PHPPackages Rank](http://phppackages.org/p/httpoz/locked/badge/rank.svg)](http://phppackages.org/p/httpoz/locked)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fhttpoz%2Flocked.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fhttpoz%2Flocked?ref=badge_shield)
 
 # Composer
 
@@ -75,3 +76,7 @@ Route::group(['middleware' => 'isLocked'], function(){
 It throws \HttpOz\Locked\Exceptions\ApplicationLocked if the logic determines the application is locked at this point in time which in turn renders a view.
 
 You can override the view with your own by creating a file here `resources\views\vendor\httpoz\locked\locked.blade.php`
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fhttpoz%2Flocked.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fhttpoz%2Flocked?ref=badge_large)
