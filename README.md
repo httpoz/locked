@@ -10,7 +10,7 @@ Laravel package to lock an app after x - date.
 # Composer
 
 ```php
-composer require httpoz/locked
+composer require httpoz/locked:^v8.0
 ```
 
 # Config File
