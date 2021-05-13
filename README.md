@@ -4,13 +4,12 @@ Laravel package to lock an app after x - date.
 
 [![Build Status](https://travis-ci.org/httpoz/locked.svg)](https://travis-ci.org/httpoz/locked)
 [![Total Downloads](https://poser.pugx.org/httpoz/locked/d/total.svg)](https://packagist.org/packages/httpoz/locked)
-[![PHPPackages Rank](http://phppackages.org/p/httpoz/locked/badge/rank.svg)](http://phppackages.org/p/httpoz/locked)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fhttpoz%2Flocked.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fhttpoz%2Flocked?ref=badge_shield)
 
 # Composer
 
 ```php
-composer require httpoz/locked
+composer require httpoz/locked:^v8.0
 ```
 
 # Config File
